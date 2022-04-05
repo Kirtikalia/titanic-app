@@ -1,0 +1,33 @@
+<html>
+    <head> 
+        <title>
+            Death prediction 
+        </title>
+        <h3>Enter detail here to know the probability of death or alive of person in Titanic</h3>
+    </head>
+        <form action="/prediction" method="post">
+            Pclass: <input type = "number", name = "Pclass", placeholder="enter passenger class ">
+            <br>
+            <br>
+            Age: <input type=" = :number", name = "Age", placeholder="enter age">
+            <br>
+            <br>
+            SibSp: <input type = "number", name = "SibSp", placeholder="enter SibSp">
+            <br>
+            <br>
+            Parch: <input type = "number", name = "Parch", placeholder="enter parch value">
+            <br>
+            <br>
+            Fare: <input type = "number", name = "Fare", placeholder="enter fare">  
+            <br>
+            <br>
+            <br>
+            <input type = "submit">
+            <br>
+            <br>
+            </form>
+           <b> Prediction: </b> {{output_prediction}}
+           <b>Probability: </b> {{ output_proba}}
+        
+        </body>
+</html>

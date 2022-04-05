@@ -34,7 +34,7 @@ def predict():
 
     print(prediction, probability)     
 
-    return render_template ("form.html", output_prediction=output)
+    return render_template ("form.html", output_prediction=output, output_proba=probability)
 
 
 
